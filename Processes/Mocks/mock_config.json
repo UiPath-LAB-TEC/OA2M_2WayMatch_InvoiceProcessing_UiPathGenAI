@@ -1,0 +1,12 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Main_mock.xaml",
+      "sourceWorkflowPath": "Main.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\SAPConfig\\initSAP_mock.xaml",
+      "sourceWorkflowPath": "SAPConfig\\initSAP.xaml"
+    }
+  ]
+}

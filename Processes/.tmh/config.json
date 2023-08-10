@@ -1,3 +1,9 @@
 {
-  "issueKeyTestcaseValues": {}
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/uipathlabs/demorepository/testmanager_",
+  "defaultProject": {
+    "id": "556da72f-7f17-0000-ab1c-0b44ee755dcc",
+    "name": "UiPath Labs Testing Dashboard",
+    "key": "ULT"
+  }
 }
