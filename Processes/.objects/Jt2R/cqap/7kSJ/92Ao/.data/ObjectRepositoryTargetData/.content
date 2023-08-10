@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YQZw-aPGKEONapw7ekFNvg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="0, 0, 0, 0" FullSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;" Guid="bef85c18-d830-4acc-ac6a-45daf61cd7ee" SearchSteps="Selector">
+      <imageRef attrName="InformativeScreenshot" originalValue="0a64de5afc3c55add826fabe94d595b1.png" xmlns="">0eWeAfZVHaUK49w5KPyjuTw</imageRef>
+    </TargetAnchorable>
+    <p:InArgument x:TypeArguments="ui:WaitForReady" x:Key="ClassicWaitForReady" />
+    <x:Boolean x:Key="IsClassic">True</x:Boolean>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

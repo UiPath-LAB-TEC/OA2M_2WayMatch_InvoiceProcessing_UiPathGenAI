@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Landscape updated="2021-05-31T10:41:01Z" version="1" generator="SAP GUI for Windows v7700.1.8.1162"><Workspaces><Workspace uuid="52164360-b53f-4866-8f53-0f7880d36a55" name="Local"><Item uuid="30862837-a27e-41bc-9a36-3fd3b08a3951" serviceid="eae98684-a741-4176-9be8-474669b9f2dc"/></Workspace></Workspaces><Services><Service type="SAPGUI" uuid="eae98684-a741-4176-9be8-474669b9f2dc" name="S4H 1909" systemid="S4H" mode="1" server="20.16.188.67:3250" sncop="-1" sapcpg="1100" dcpg="2"/></Services></Landscape>

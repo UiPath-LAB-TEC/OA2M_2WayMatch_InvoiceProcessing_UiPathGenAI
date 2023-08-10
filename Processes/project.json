@@ -1,0 +1,72 @@
+{
+  "name": "OA2M_2WayMatch_InvoiceProcessing_UiPathGenAI",
+  "projectId": "aeae0a0a-aae9-47c8-9819-dfae935e5364",
+  "description": "UiPath DevDive: Unleash the full power of Automation with Generative AI. This template serves as a non-production, demo template for users to gain some experience working with UiPath + GenAI Automation Use Cases.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.DocumentUnderstanding.Digitizer": "[3.2.2]",
+    "UiPath.DocumentUnderstanding.ML.Activities": "[1.21.2]",
+    "UiPath.IntelligentOCR.Activities": "[6.9.3]",
+    "UiPath.MicrosoftAzureOpenAI.IntegrationService.Activities": "[6.1.0]",
+    "UiPath.OCR.Activities": "[3.15.1]",
+    "UiPath.System.Activities": "[23.4.3]",
+    "UiPath.Testing.Activities": "[23.4.1]",
+    "UiPath.UIAutomation.Activities": "[23.4.7]",
+    "UiPath.WebAPI.Activities": "[1.16.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.0.0",
+  "projectVersion": "1.0.3",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": true,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": true
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "PO_Lookup.xaml",
+      "uniqueId": "fbea19f9-8d2d-416d-ba3f-d7b2a673db9b",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "19031a54-f333-461c-a8d7-031ec186037e",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

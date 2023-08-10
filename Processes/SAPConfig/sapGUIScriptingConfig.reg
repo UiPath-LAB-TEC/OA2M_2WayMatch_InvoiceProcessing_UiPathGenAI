@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\SAP\SAPGUI Front\SAP Frontend Server\Security]
+"UserScripting"=dword:00000001
+"WarnOnAttach"=dword:00000000
+"WarnOnConnection"=dword:00000000

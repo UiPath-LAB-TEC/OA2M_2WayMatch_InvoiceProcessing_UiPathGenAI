@@ -1,0 +1,12 @@
+﻿{
+  "SourcePath": "C:\\Users\\dhruv.patel\\OneDrive - UiPath\\Documents\\UiPath\\DevDiveDemo_GenAIUseCase\\.objects\\Jt2R",
+  "Id": "Jt2R0FCfMEKs5noYhu0m_w",
+  "Reference": "I4iGYayNl0K_vbzrFbRKjA/Jt2R0FCfMEKs5noYhu0m_w",
+  "Name": "SAP",
+  "Type": "App",
+  "Created": "0001-01-01T00:00:00",
+  "Updated": "2023-06-12T20:25:31.466232Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

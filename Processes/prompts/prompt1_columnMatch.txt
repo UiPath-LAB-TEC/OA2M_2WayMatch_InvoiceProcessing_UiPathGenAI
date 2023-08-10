@@ -1,0 +1,12 @@
+﻿Add Table1 data to Table2 by semantically matching the columns. Leave blank values for missing data in Table2.
+
+Table1:
+<table_placeholder>
+
+
+Table2:
+Item,Material,Short Text,PO Quantity,Deliv. Date,Net Price,OPU,
+
+
+Respond exactly in the following format:
+{'table': '<entire updated Table2 with column headers and data>', 'explanation': '<data changes made>'}

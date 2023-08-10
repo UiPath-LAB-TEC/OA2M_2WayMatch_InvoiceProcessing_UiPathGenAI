@@ -1,0 +1,11 @@
+﻿Validate that the data within the two tables below match. Semantically match each Tabel1 row to a Table2 row by the Item data. Does the value of every data point in both rows match each other?
+
+Table1:
+<table1>
+
+Table2:
+<table2>
+
+
+Respond in the following format:
+{'correct': '<Yes or No>', 'reason': '<detailed explanation of all issues and mismatches found>'}
