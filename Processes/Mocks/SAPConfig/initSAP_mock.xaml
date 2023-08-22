@@ -104,7 +104,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="OA2M_SAP_Credentials" CacheStrategy="None" DisplayName="Get Credential" FolderPath="InternalDemos/OA2M_2WayMatch_InvoiceProcessing_UiPathGenAI" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[erp_pwd]" Username="[erp_userName]" />
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="OA2M_SAP_Credentials" CacheStrategy="Execution" DisplayName="Get Credential" FolderPath="InternalDemos/OA2M_2WayMatch_InvoiceProcessing_UiPathGenAI" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[erp_pwd]" Username="[erp_userName]" />
     <ui:PathExists Resource="{x:Null}" DisplayName="Path Exists" Exists="[SapFolder]" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+&quot;\SAP\Common&quot;]" PathType="Folder">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -137,7 +137,7 @@
     </If>
     <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[&quot;import &quot; + Directory.GetCurrentDirectory + &quot;\SAPConfig\sapGUIScriptingConfig.reg&quot;]" DisplayName="Start Process" FileName="C:\Windows\System32\reg.exe" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
     <ui:CopyFile ContinueOnError="{x:Null}" Destination="[Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)+&quot;\SAP\Common&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="388,154" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="SAPConfig\SAPUILandscape.xml" />
-    <ucas:Logon Window="{x:Null}" ConnectionName="S4H 1909" DelayBetweenRetries="500" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="388,138" sap2010:WorkflowViewState.IdRef="Logon_1" Retries="5" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe">
+    <ucas:Logon Window="{x:Null}" ConnectionName="S4H 1909" DelayBetweenRetries="1000" DisplayName="SAP Logon" sap:VirtualizedContainerService.HintSize="388,138" sap2010:WorkflowViewState.IdRef="Logon_1" Retries="10" SAPLogonPath="C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -145,9 +145,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ucas:Logon>
-    <ucas:Login Password="{x:Null}" Client="804" DisplayName="SAP Login 'saplogon.exe  SAP'" sap:VirtualizedContainerService.HintSize="388,365" sap2010:WorkflowViewState.IdRef="Login_1" IsSecure="True" Language="EN" MultiLogonOptionToChoose="Single" SecurePassword="[erp_pwd]" Timeout="5000" Username="[erp_userName]" Window="[SAPSession]">
+    <ucas:Login Password="{x:Null}" Client="804" DisplayName="SAP Login 'saplogon.exe SAP'" sap:VirtualizedContainerService.HintSize="388,365" sap2010:WorkflowViewState.IdRef="Login_2" IsSecure="True" Language="EN" MultiLogonOptionToChoose="Single" SecurePassword="[erp_pwd]" Timeout="5000" Username="[erp_userName]" Window="[SAPSession]">
       <ucas:Login.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" ContentHash="WhE7rOlLK06Rcusl60splQ" Id="d818b633-db2d-4483-898d-92d695de757e" InformativeScreenshot="25ef005298b45685431fc0a3d76c5094" Reference="I4iGYayNl0K_vbzrFbRKjA/nWKceHtNc0ChH3yVSIshog" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" ContentHash="WhE7rOlLK06Rcusl60splQ" Id="45224e86-051d-47a2-b731-b10cfac77361" InformativeScreenshot="25ef005298b45685431fc0a3d76c5094" Reference="I4iGYayNl0K_vbzrFbRKjA/nWKceHtNc0ChH3yVSIshog" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -156,12 +156,6 @@
           </ui:Target.WaitForReady>
         </ui:Target>
       </ucas:Login.Target>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
     </ucas:Login>
   </Sequence>
 </Activity>
