@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>855,1020</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>815,1019</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -99,7 +99,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,955" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="512,954" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="erp_pwd" />
       <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
@@ -120,7 +120,7 @@
     </ui:InvokeWorkflowFile>
     <ucas:CallTransaction DisplayName="Call Transaction ME23" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CallTransaction_1" Transaction="ME23">
       <ucas:CallTransaction.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" ContentHash="YQZw-aPGKEONapw7ekFNvg" Id="02330879-8a7c-4b3f-a091-43fb18b22ac1" InformativeScreenshot="0a64de5afc3c55add826fabe94d595b1" Reference="I4iGYayNl0K_vbzrFbRKjA/92AomTqW3Eu0-jVf04boyw" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" ContentHash="J3G6toC3vk2xobrU1bKXjQ" Id="a8ebd5ec-8bb5-4655-8cbe-2ca5f367003d" InformativeScreenshot="0a64de5afc3c55add826fabe94d595b1" Reference="I4iGYayNl0K_vbzrFbRKjA/92AomTqW3Eu0-jVf04boyw" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP Easy Access*' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>
@@ -228,7 +228,7 @@
       </uix:NApplicationCard>
     </Sequence>
     <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="450,80" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[string_ExtractedDataTable]" />
-    <Assign sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[tableHeaders]</OutArgument>
       </Assign.To>
